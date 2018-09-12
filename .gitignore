@@ -1,3 +1,3 @@
 packages/*
-bin/*
-obj/*
+myjobportal/bin/*
+myjobportal/obj/*
