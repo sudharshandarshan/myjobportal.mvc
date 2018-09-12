@@ -1,0 +1,66 @@
+﻿@model myjobportal.Data.job
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>job</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.jobdescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.jobdescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.experienceinmonths)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.experienceinmonths)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.expectedctc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.expectedctc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.skills)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.skills)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.joblocation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.joblocation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.contactdetails)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.contactdetails)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

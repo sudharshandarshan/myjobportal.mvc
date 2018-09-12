@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="jobportaldbModelStoreContainer" CdmEntityContainer="jobportaldbEntities">
+    <EntitySetMapping Name="addresses">
+      <EntityTypeMapping TypeName="jobportaldbModel.address">
+        <MappingFragment StoreEntitySet="address">
+          <ScalarProperty Name="country" ColumnName="country" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="pin" ColumnName="pin" />
+          <ScalarProperty Name="address2" ColumnName="address2" />
+          <ScalarProperty Name="address1" ColumnName="address1" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="candidates">
+      <EntityTypeMapping TypeName="jobportaldbModel.candidate">
+        <MappingFragment StoreEntitySet="candidate">
+          <ScalarProperty Name="mobilenumber" ColumnName="mobilenumber" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="dateofbirth" ColumnName="dateofbirth" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="middlename" ColumnName="middlename" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="companies">
+      <EntityTypeMapping TypeName="jobportaldbModel.company">
+        <MappingFragment StoreEntitySet="company">
+          <ScalarProperty Name="location" ColumnName="location" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="employers">
+      <EntityTypeMapping TypeName="jobportaldbModel.employer">
+        <MappingFragment StoreEntitySet="employer">
+          <ScalarProperty Name="companyid" ColumnName="companyid" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="middlename" ColumnName="middlename" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jobs">
+      <EntityTypeMapping TypeName="jobportaldbModel.job">
+        <MappingFragment StoreEntitySet="jobs">
+          <ScalarProperty Name="contactdetails" ColumnName="contactdetails" />
+          <ScalarProperty Name="joblocation" ColumnName="joblocation" />
+          <ScalarProperty Name="skills" ColumnName="skills" />
+          <ScalarProperty Name="expectedctc" ColumnName="expectedctc" />
+          <ScalarProperty Name="experienceinmonths" ColumnName="experienceinmonths" />
+          <ScalarProperty Name="jobdescription" ColumnName="jobdescription" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
